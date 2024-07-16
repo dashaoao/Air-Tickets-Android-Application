@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Air Tickets</string>
+
+    <string name="label_airtickets">Авиабилеты</string>
+    <string name="label_hotels">Отели</string>
+    <string name="label_shorter">Короче</string>
+    <string name="label_subscribes">Подписки</string>
+    <string name="label_profile">Профиль</string>
+
+    <string name="label_search">Поиск</string>
+    <string name="label_plug">Заглушка</string>
+    <string name="label_flight">Рейсы</string>
+    <string name="label_ticket">Билеты</string>
+</resources>

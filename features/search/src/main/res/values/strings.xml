@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="search_label_path">Сложный маршрут</string>
+    <string name="search_label_ball">Куда угодно</string>
+    <string name="search_label_calendar">Выходные</string>
+    <string name="search_label_fire">Горячие билеты</string>
+
+    <string name="search_text_description">Популярное направление</string>
+</resources>

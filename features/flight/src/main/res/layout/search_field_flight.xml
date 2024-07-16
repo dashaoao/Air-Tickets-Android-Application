@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="16dp"
+    android:background="@drawable/background_16dp"
+    android:backgroundTint="@color/secondary_container"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/flight_btn_back"
+        style="@style/SearchImageButton"
+        android:src="@drawable/ic_back"
+        android:tint="@color/on_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/flight_et_search_from"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/flight_et_search_from"
+        style="@style/TextView.Subtitle.EditText.WithDrawable"
+        android:drawableEnd="@drawable/ic_change"
+        android:hint="@string/hint_search_from"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/flight_btn_back"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Москва" />
+
+    <View
+        android:id="@+id/flight_search_separator"
+        android:layout_marginVertical="8dp"
+        app:layout_constraintBottom_toTopOf="@id/flight_et_search_to"
+        app:layout_constraintStart_toStartOf="@id/flight_et_search_from"
+        app:layout_constraintTop_toBottomOf="@id/flight_et_search_from"
+        style="@style/Separator"/>
+
+    <EditText
+        android:id="@+id/flight_et_search_to"
+        style="@style/TextView.Subtitle.EditText.WithDrawable"
+        android:drawableEnd="@drawable/ic_close"
+        android:hint="@string/hint_search_to"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/flight_et_search_from"
+        app:layout_constraintTop_toBottomOf="@id/flight_search_separator" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

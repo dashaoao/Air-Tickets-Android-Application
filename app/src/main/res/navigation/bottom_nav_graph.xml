@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/navigation_airtickets">
+
+    <include app:graph="@navigation/search_nav_graph" />
+
+    <fragment
+        android:id="@+id/navigation_airtickets"
+        android:name="ru.softpeach.airtickets.main.MainFragment"
+        android:label="@string/label_airtickets" >
+        <action
+            android:id="@+id/action_mainFragment_to_searchNavGraph"
+            app:destination="@id/search_nav_graph">
+            <argument
+                android:name="from"
+                app:argType="string"
+                app:nullable="false"/>
+        </action>
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_hotels"
+        android:name="ru.softpeach.airtickets.plug.PlugFragment"
+        android:label="@string/label_hotels" />
+
+    <fragment
+        android:id="@+id/navigation_shorter"
+        android:name="ru.softpeach.airtickets.plug.PlugFragment"
+        android:label="@string/label_shorter" />
+
+    <fragment
+        android:id="@+id/navigation_subscribes"
+        android:name="ru.softpeach.airtickets.plug.PlugFragment"
+        android:label="@string/label_subscribes" />
+
+    <fragment
+        android:id="@+id/navigation_profile"
+        android:name="ru.softpeach.airtickets.plug.PlugFragment"
+        android:label="@string/label_profile" />
+</navigation>
